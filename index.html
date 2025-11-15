@@ -1,267 +1,1222 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giveaway Content Pack</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>500+ Video 4K + 6 Ghiduri – Pachet Gratuit pentru Content & Bani</title>
+  <meta name="description" content="Primești gratuit baza de date cu 500+ video 4K și 6 ghiduri complete pentru TikTok, Instagram, Reels și conversii. Email + follow pe canalele noastre și deblochezi toate pachetele.">
 
-        body {
-            background: #050816;
-            color: #f5f5f5;
-            line-height: 1.6;
-        }
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-soft: #0b1120;
+      --surface: #020617;
+      --accent: #22c55e;
+      --accent-strong: #16a34a;
+      --accent-soft: rgba(34, 197, 94, 0.12);
+      --accent-alt: #38bdf8;
+      --border-subtle: rgba(148, 163, 184, 0.4);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --text-soft: #6b7280;
+      --radius-lg: 18px;
+      --radius-full: 999px;
+      --shadow-soft: 0 24px 70px rgba(15, 23, 42, 0.7);
+      --max-width: 1100px;
+      --transition: 0.2s ease;
+    }
 
-        .page-wrapper {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 32px 16px 64px;
-        }
+    * , *::before, *::after { box-sizing: border-box; }
 
-        header {
-            text-align: center;
-            margin-bottom: 32px;
-        }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 55%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
 
-        header h1 {
-            font-size: 2.4rem;
-            margin-bottom: 8px;
-        }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-        header p {
-            font-size: 1rem;
-            color: #bbbbbb;
-        }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.75rem 1.5rem 2.5rem;
+    }
 
-        .highlight {
-            color: #22c55e;
-            font-weight: 600;
-        }
+    /* HERO */
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 20px;
-            margin-top: 32px;
-        }
+    .hero {
+      border-bottom: 1px solid rgba(30, 64, 175, 0.4);
+      background: radial-gradient(circle at top left, #22c55e22 0, #020617 55%);
+    }
 
-        .card {
-            background: #0f172a;
-            border-radius: 16px;
-            padding: 20px 18px 18px;
-            border: 1px solid rgba(148, 163, 184, 0.3);
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.8);
-        }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+      gap: 2rem;
+      align-items: center;
+      padding-top: 1.5rem;
+      padding-bottom: 2.2rem;
+    }
 
-        .card h2 {
-            font-size: 1.1rem;
-            margin-bottom: 6px;
-        }
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+    }
 
-        .tag {
-            display: inline-block;
-            font-size: 0.75rem;
-            padding: 3px 8px;
-            border-radius: 999px;
-            background: rgba(34, 197, 94, 0.12);
-            color: #bbf7d0;
-            border: 1px solid rgba(34, 197, 94, 0.4);
-            margin-bottom: 8px;
-        }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.32rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
 
-        .card p {
-            font-size: 0.9rem;
-            color: #cbd5f5;
-            margin-bottom: 14px;
-        }
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 14px rgba(34, 197, 94, 0.9);
+    }
 
-        form label {
-            display: block;
-            font-size: 0.8rem;
-            margin-bottom: 4px;
-            color: #e5e7eb;
-        }
+    .hero-title {
+      font-size: clamp(2.15rem, 3.4vw, 2.7rem);
+      font-weight: 700;
+      letter-spacing: -0.05em;
+      margin: 0 0 0.6rem;
+      color: #f9fafb;
+    }
 
-        input[type="email"] {
-            width: 100%;
-            padding: 8px 10px;
-            border-radius: 999px;
-            border: 1px solid #4b5563;
-            background: #020617;
-            color: #f9fafb;
-            font-size: 0.85rem;
-            margin-bottom: 10px;
-            outline: none;
-        }
+    .hero-title span { color: #bbf7d0; }
 
-        input[type="email"]:focus {
-            border-color: #22c55e;
-            box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.5);
-        }
+    .hero-sub {
+      font-size: 0.97rem;
+      color: var(--text-muted);
+      max-width: 30rem;
+      margin-bottom: 1.3rem;
+    }
 
-        button {
-            width: 100%;
-            padding: 9px 12px;
-            border-radius: 999px;
-            border: none;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            background: linear-gradient(to right, #22c55e, #14b8a6);
-            color: #020617;
-            transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.15s;
-        }
+    .hero-sub strong { color: #e5e7eb; font-weight: 600; }
 
-        button:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 10px 30px rgba(20, 184, 166, 0.5);
-        }
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-bottom: 1.4rem;
+    }
 
-        button:active {
-            transform: translateY(0);
-            box-shadow: none;
-            opacity: 0.9;
-        }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.32rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.8);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
 
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: #9ca3af;
-        }
+    .pill span { font-size: 0.95rem; }
 
-        footer span {
-            color: #22c55e;
-        }
-    </style>
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      align-items: center;
+      margin-bottom: 0.7rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      padding: 0.85rem 1.5rem;
+      border-radius: var(--radius-full);
+      border: none;
+      background: radial-gradient(circle at top left, #22c55e, #16a34a);
+      color: #022c22;
+      font-size: 0.93rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 20px 50px rgba(21, 128, 61, 0.55);
+      transition: transform var(--transition), box-shadow var(--transition),
+        filter var(--transition);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 26px 70px rgba(21, 128, 61, 0.7);
+      filter: brightness(1.02);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+      box-shadow: 0 16px 40px rgba(21, 128, 61, 0.6);
+      filter: brightness(0.98);
+    }
+
+    .btn-secondary-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.75rem 1.2rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background var(--transition), border var(--transition),
+        color var(--transition), transform var(--transition);
+    }
+
+    .btn-secondary-outline:hover {
+      background: rgba(15, 23, 42, 0.85);
+      border-color: #e5e7eb;
+      color: #e5e7eb;
+      transform: translateY(-1px);
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .hero-note strong { color: var(--accent); }
+
+    .hero-card {
+      background: radial-gradient(circle at top, #0f172a 0, #020617 70%);
+      border-radius: 24px;
+      padding: 1.3rem 1.5rem 1.5rem;
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      box-shadow: var(--shadow-soft);
+      max-width: 420px;
+      margin-left: auto;
+    }
+
+    @media (max-width: 900px) {
+      .hero-card {
+        max-width: 100%;
+        margin: 0;
+      }
+    }
+
+    .card-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-alt);
+      margin-bottom: 0.4rem;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #f9fafb;
+    }
+
+    .card-sub {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-bottom: 0.9rem;
+    }
+
+    .card-sub b { color: #e5e7eb; }
+
+    .form-note {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.45rem;
+    }
+
+    main { flex: 1; background: #020617; }
+
+    .section {
+      padding: 2.4rem 0;
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .section-header {
+      margin-bottom: 1.4rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-soft);
+      margin-bottom: 0.35rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #f9fafb;
+      margin-bottom: 0.35rem;
+    }
+
+    .section-sub {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      max-width: 620px;
+    }
+
+    /* INPUTS / CHECKBOX */
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .input {
+      width: 100%;
+      padding: 0.7rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background: rgba(15, 23, 42, 0.85);
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border var(--transition), box-shadow var(--transition),
+        background var(--transition), transform var(--transition);
+    }
+
+    .input::placeholder { color: #6b7280; }
+
+    .input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.7);
+      background: rgba(15, 23, 42, 1);
+      transform: translateY(-0.5px);
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      margin-bottom: 0.5rem;
+    }
+
+    .checkbox-row input {
+      margin-top: 0.15rem;
+      accent-color: var(--accent);
+    }
+
+    .grid-what {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.4fr);
+      gap: 1.6rem;
+    }
+
+    @media (max-width: 900px) {
+      .grid-what { grid-template-columns: 1fr; }
+    }
+
+    .card-outline {
+      border-radius: 18px;
+      padding: 1.2rem 1.3rem 1.3rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: radial-gradient(circle at top, #020617, #020617);
+    }
+
+    .card-outline h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-outline p {
+      font-size: 0.87rem;
+      color: var(--text-muted);
+      margin: 0 0 0.6rem;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-soft);
+    }
+
+    .list {
+      list-style: none;
+      margin: 0.4rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.25rem;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .list li {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .bullet {
+      font-size: 0.75rem;
+      color: var(--accent-alt);
+      margin-top: 0.15rem;
+    }
+
+    /* GIVEAWAY CARDS */
+
+    .giveaways-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+
+    @media (max-width: 1000px) {
+      .giveaways-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 720px) {
+      .giveaways-grid { grid-template-columns: 1fr; }
+    }
+
+    .give-card {
+      border-radius: 16px;
+      padding: 1rem 1.05rem 1.05rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: radial-gradient(circle at top, #020617 0, #020617 70%);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .give-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .give-tag {
+      font-size: 0.78rem;
+      padding: 0.18rem 0.6rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: var(--text-soft);
+    }
+
+    .give-chip {
+      font-size: 0.78rem;
+      padding: 0.22rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--accent-alt);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+    }
+
+    .give-title {
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: #f9fafb;
+      margin: 0;
+    }
+
+    .give-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .give-bullets {
+      list-style: none;
+      margin: 0.2rem 0 0.1rem;
+      padding: 0;
+      display: grid;
+      gap: 0.23rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .give-bullets li {
+      display: flex;
+      gap: 0.35rem;
+    }
+
+    .give-bullet {
+      font-size: 0.72rem;
+      color: var(--accent-alt);
+      margin-top: 0.12rem;
+    }
+
+    .give-form {
+      margin-top: 0.25rem;
+      border-top: 1px solid rgba(30, 64, 175, 0.5);
+      padding-top: 0.55rem;
+    }
+
+    .input-mini {
+      width: 100%;
+      padding: 0.55rem 0.8rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      background: rgba(15, 23, 42, 0.85);
+      color: #e5e7eb;
+      font-size: 0.82rem;
+      outline: none;
+      margin-bottom: 0.4rem;
+      transition: border var(--transition), box-shadow var(--transition),
+        background var(--transition), transform var(--transition);
+    }
+
+    .input-mini::placeholder { color: #6b7280; }
+
+    .input-mini:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.7);
+      background: rgba(15, 23, 42, 1);
+      transform: translateY(-0.5px);
+    }
+
+    .btn-mini {
+      width: 100%;
+      padding: 0.55rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: none;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #022c22;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 14px 40px rgba(21, 128, 61, 0.55);
+      transition: transform var(--transition), box-shadow var(--transition),
+        filter var(--transition);
+    }
+
+    .btn-mini:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 20px 55px rgba(21, 128, 61, 0.7);
+      filter: brightness(1.02);
+    }
+
+    .give-note {
+      font-size: 0.76rem;
+      color: var(--text-soft);
+      margin-top: 0.35rem;
+    }
+
+    .mini-card {
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      border: 1px dashed rgba(148, 163, 184, 0.6);
+      background: rgba(15, 23, 42, 0.8);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .mini-card b { color: #e5e7eb; }
+
+    .grid-forwho {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.3rem;
+    }
+
+    @media (max-width: 900px) {
+      .grid-forwho { grid-template-columns: 1fr; }
+    }
+
+    .for-card {
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: radial-gradient(circle at top, #020617 0, #020617 70%);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .for-card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 0.95rem;
+      color: #f9fafb;
+    }
+
+    .for-list {
+      list-style: none;
+      margin: 0.3rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.25rem;
+    }
+
+    .for-list li {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .for-icon {
+      margin-top: 0.15rem;
+      font-size: 0.75rem;
+    }
+
+    .cta-block {
+      border-radius: 22px;
+      padding: 1.5rem 1.6rem 1.6rem;
+      border: 1px solid rgba(34, 197, 94, 0.4);
+      background: radial-gradient(circle at top, #16a34a33 0, #020617 60%);
+      box-shadow: 0 28px 80px rgba(21, 128, 61, 0.7);
+      text-align: center;
+    }
+
+    .cta-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #f9fafb;
+      margin-bottom: 0.3rem;
+    }
+
+    .cta-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .cta-text b { color: #e5e7eb; }
+
+    .cta-subnote {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-top: 0.5rem;
+    }
+
+    .grid-faq {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.8fr);
+      gap: 1.4rem;
+    }
+
+    @media (max-width: 900px) {
+      .grid-faq { grid-template-columns: 1fr; }
+    }
+
+    .faq-item {
+      border-radius: 14px;
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: rgba(15, 23, 42, 0.85);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    .faq-q {
+      font-weight: 600;
+      color: #f9fafb;
+      margin-bottom: 0.2rem;
+      font-size: 0.88rem;
+    }
+
+    footer {
+      border-top: 1px solid rgba(15, 23, 42, 0.9);
+      background: #020617;
+      padding: 1.1rem 1.5rem 1.3rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-links a {
+      color: var(--text-soft);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 3px;
+      cursor: pointer;
+    }
+
+  </style>
 </head>
 <body>
+<div class="page">
 
-<div class="page-wrapper">
-    <header>
-        <h1>Giveaway <span class="highlight">Content Pack</span></h1>
-        <p>Introdu emailul, apasă pe buton și ești redirecționat direct către fișierul de pe Mega.</p>
-    </header>
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-badge">
+          <span class="hero-dot"></span>
+          7 PACHETE • ACCES 100% GRATUIT
+        </div>
+        <h1 class="hero-title">
+          500+ video 4K + 6 ghiduri complete.
+          <span>Tot ce ai nevoie să începi să faci bani din content.</span>
+        </h1>
+        <p class="hero-sub">
+          Primești gratuit baza de date cu <strong>500+ video 4K</strong> și <strong>6 ghiduri</strong> care îți arată exact
+          ce să postezi, ce să spui și cum să transformi vizualizările în bani. Poți debloca <strong>oricare dintre pachete</strong>
+          sau toate 7, doar cu email + follow pe canalele noastre.
+        </p>
+        <div class="hero-points">
+          <div class="pill"><span>🎥</span> 500+ video 4K pregătite pentru TikTok / Reels / Shorts</div>
+          <div class="pill"><span>📚</span> 6 ghiduri: idei, NLP, TikTok, Instagram, conversie, încredere</div>
+          <div class="pill"><span>💰</span> Făcute ca să ajungi de la views la bani</div>
+          <div class="pill"><span>✅</span> Email + follow social = acces instant</div>
+        </div>
+        <div class="hero-cta-row">
+          <a href="#giveaways" class="btn-primary">
+            Vezi toate cele 7 pachete gratuite
+          </a>
+          <a href="#money" class="btn-secondary-outline">
+            Cum folosești pachetul ca să faci bani
+          </a>
+        </div>
+        <div class="hero-note">
+          Pentru fiecare pachet: <strong>lași emailul</strong>, confirmi că ai dat <strong>follow</strong> pe YouTube, Facebook, Instagram și TikTok,
+          iar după submit ești redirecționat direct către linkul de download al pachetului respectiv.
+        </div>
+      </div>
 
-    <section class="grid">
+      <div>
+        <div class="hero-card">
+          <div class="card-label">Cum funcționează</div>
+          <div class="card-title">Deblochezi ce vrei, când vrei</div>
+          <p class="card-sub">
+            Ai <b>7 pachete diferite</b>. Pentru fiecare există un mic formular:
+            <b>email + confirmare follow</b>. După ce trimiți, se deschide automat linkul de download
+            al pachetului respectiv (Mega.nz).
+          </p>
+          <p class="card-sub">
+            Poți să deblochezi doar ce ai nevoie acum sau toate 7 pachetele:
+            500+ video 4K, idei de Reels, NLP, TikTok, Instagram, conversie, încredere.
+          </p>
+          <p class="form-note">
+            Nu îți cer cardul, nu există abonament ascuns. Tu decizi cât de serios folosești resursele și
+            cât de repede le transformi în bani, colaborări sau clienți.
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <!-- Giveaway #1 -->
-        <article class="card">
-            <span class="tag">Giveaway #1</span>
-            <h2>100 Idei Reels + Descrieri</h2>
-            <p>Un ghid cu 100 de idei pentru Reels + descrieri gata făcute, ca să nu mai pierzi timp gândindu-te ce să postezi.</p>
+  <!-- MAIN -->
+  <main>
 
-            <form action="https://formspree.io/f/xanajezb" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/f0wTCQhS#kdQmUdTXFaK5KpwYj8eUz6Cs6M0EesSiL-hi7VZhWHo">
-                <label for="email-g1">Email</label>
-                <input id="email-g1" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #1</button>
-            </form>
-        </article>
+    <!-- CE PRIMEȘTI -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Ce primești concret</div>
+          <h2 class="section-title">Baza vizuală + creierul din spatele conținutului</h2>
+          <p class="section-sub">
+            Ai în același ecosistem: clipurile 4K gata de folosit și ghidurile care îți explică exact
+            cum să le transformi în content care atrage views, urmăritori și bani.
+          </p>
+        </div>
 
-        <!-- Giveaway #2 -->
-        <article class="card">
-            <span class="tag">Giveaway #2</span>
-            <h2>Construirea Încrederii Publicului</h2>
-            <p>Ghid complet care te învață cum să construiești încredere reală cu publicul tău, nu doar engagement gol.</p>
+        <div class="grid-what">
+          <div class="card-outline">
+            <h3>500+ Video 4K pentru TikTok, Reels, Shorts & Ads</h3>
+            <p>
+              Arhivă mare, organizată pe foldere, ca să poți produce conținut în serie fără să filmezi totul singur.
+            </p>
+            <div class="tag-row">
+              <span class="tag">🎥 Vertical & orizontal</span>
+              <span class="tag">4K ready-to-use</span>
+              <span class="tag">Perfect pentru branduri & personal</span>
+            </div>
+            <ul class="list">
+              <li><span class="bullet">●</span><span><strong>Video cu text</strong> deja integrat (quotes, motivaționale, mindset).</span></li>
+              <li><span class="bullet">●</span><span><strong>Antrenamente & fitness</strong> pentru conturi de sport și lifestyle.</span></li>
+              <li><span class="bullet">●</span><span><strong>Clipuri generale</strong> pentru motivațional, productivitate, bani, educație.</span></li>
+              <li><span class="bullet">●</span><span><strong>Aesthetic reels</strong> cu vibrație vizuală puternică pentru branding.</span></li>
+              <li><span class="bullet">●</span><span><strong>Space reels</strong> – imagini spectaculoase, perfecte pentru mesaje profunde.</span></li>
+            </ul>
+          </div>
 
-            <form action="https://formspree.io/f/xovywegb" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/vtBRhQ7R#A-AW2Wg0Qy4I4O6jm6iM2I-7-XXfzbO68-vhyugEvjM">
-                <label for="email-g2">Email</label>
-                <input id="email-g2" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #2</button>
-            </form>
-        </article>
+          <div class="card-outline">
+            <h3>6 ghiduri compacte care îți spun exact ce să faci</h3>
+            <p>
+              Ghidurile te ajută să nu mai postezi „la întâmplare”, ci cu o strategie simplă, clară și orientată spre rezultate.
+            </p>
+            <ul class="list">
+              <li><span class="bullet">●</span><span>Ghid 100 idei Reels + descrieri.</span></li>
+              <li><span class="bullet">●</span><span>Ghid tehnici NLP pentru TikTok.</span></li>
+              <li><span class="bullet">●</span><span>Ghid „De la vizualizări la conversie”.</span></li>
+              <li><span class="bullet">●</span><span>Ghid complet promovare pe TikTok.</span></li>
+              <li><span class="bullet">●</span><span>Ghid complet „Secretele Instagramului”.</span></li>
+              <li><span class="bullet">●</span><span>Ghid complet „Cum construiești încrederea publicului”.</span></li>
+            </ul>
+          </div>
+        </div>
 
-        <!-- Giveaway #3 -->
-        <article class="card">
-            <span class="tag">Giveaway #3</span>
-            <h2>De la Vizualizări la Conversie</h2>
-            <p>Toți pașii ca să transformi vizualizările în mesaje, lead-uri și clienți care chiar plătesc.</p>
-
-            <form action="https://formspree.io/f/mgvrykeb" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/mwgxxCaJ#DlzDQN2YME-JotGBalrPWYo1ahX75fUVU9Ev1myFa0E">
-                <label for="email-g3">Email</label>
-                <input id="email-g3" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #3</button>
-            </form>
-        </article>
-
-        <!-- Giveaway #4 -->
-        <article class="card">
-            <span class="tag">Giveaway #4</span>
-            <h2>500+ Video 4K Ready-to-Post</h2>
-            <p>Peste 500 de clipuri 4K pe care le poți folosi în Reels, TikTok sau Shorts pentru content constant.</p>
-
-            <form action="https://formspree.io/f/mrbrkqbz" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/folder/vk5FVQAD#p4_IQp19IU79aEff3CjY2A">
-                <label for="email-g4">Email</label>
-                <input id="email-g4" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #4</button>
-            </form>
-        </article>
-
-        <!-- Giveaway #5 -->
-        <article class="card">
-            <span class="tag">Giveaway #5</span>
-            <h2>Tehnici NLP pentru TikTok</h2>
-            <p>Ghid cu tehnici NLP aplicate pe TikTok, ca să creezi mesaje care prind, influențează și rămân în minte.</p>
-
-            <form action="https://formspree.io/f/mnnlvdnn" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/a4IGnD7B#GQ3IA3BfYS4tnzBW0kayWjEwQvH3zWNTFrdeEKOyIrA">
-                <label for="email-g5">Email</label>
-                <input id="email-g5" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #5</button>
-            </form>
-        </article>
-
-        <!-- Giveaway #6 -->
-        <article class="card">
-            <span class="tag">Giveaway #6</span>
-            <h2>Totul despre Promovarea pe TikTok</h2>
-            <p>Un ghid complet care te învață cum funcționează TikTok și cum să îl folosești ca să crești rapid.</p>
-
-            <form action="https://formspree.io/f/xjkjrwkg" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/21wRXZDT#dJneV-OedR0nWCLTv5gJvNJKmDsRecHHJeHNYkcNBHI">
-                <label for="email-g6">Email</label>
-                <input id="email-g6" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #6</button>
-            </form>
-        </article>
-
-        <!-- Giveaway #7 -->
-        <article class="card">
-            <span class="tag">Giveaway #7</span>
-            <h2>Toate Secretele Instagramului</h2>
-            <p>Un ghid full despre cum să folosești Instagram ca un profesionist: reach, algoritm, content și creștere.</p>
-
-            <form action="https://formspree.io/f/mdkyzgke" method="POST">
-                <input type="hidden" name="_redirect"
-                       value="https://mega.nz/file/6h4VhI5D#sKXajdReSoyrx9XGTZqrxWMnWE4IppYiywwYhlQMzL4">
-                <label for="email-g7">Email</label>
-                <input id="email-g7" type="email" name="email" required placeholder="ex: nume@exemplu.com">
-                <button type="submit">Descarcă Giveaway #7</button>
-            </form>
-        </article>
-
+      </div>
     </section>
 
-    <footer>
-        <p>După trimiterea formularului ești redirecționat automat către <span>Mega</span> pentru download.</p>
-    </footer>
-</div>
+    <!-- GIVEAWAYS -->
+    <section class="section" id="giveaways">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Pachetele gratuite</div>
+          <h2 class="section-title">Deblochează oricare dintre cele 7 pachete (sau pe toate)</h2>
+          <p class="section-sub">
+            Pentru fiecare pachet: lași emailul, confirmi că ai dat follow / subscribe la canalele noastre
+            (YouTube, Facebook, Instagram, TikTok), apeși pe buton și ești redirecționat direct către linkul de download (Mega.nz).
+          </p>
+        </div>
 
+        <div class="giveaways-grid">
+
+          <!-- GIVEAWAY 1 – 100 idei Reels -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #1</div>
+              <div class="give-chip">100 Idei Reels</div>
+            </div>
+            <h3 class="give-title">1 ghid cu 100 idei Reels + descrieri</h3>
+            <p class="give-desc">
+              100 de idei clare de Reels, fiecare cu descriere și unghi de abordare.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Scapi de întrebarea „ce postez azi?” pentru mult timp.</span></li>
+              <li><span class="give-bullet">●</span><span>Potrivit pentru TikTok, Instagram Reels și YouTube Shorts.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/xanajezb">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #1 – 100 idei Reels"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow1" name="followed" required />
+                <label for="follow1">
+                  Confirm că am dat follow / subscribe la YouTube, Facebook, Instagram și TikTok.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="1-ghid-100-idei-reels" />
+              <input type="hidden" name="_subject" value="Giveaway #1 – Ghid 100 idei Reels + descrieri" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/f0wTCQhS#kdQmUdTXFaK5KpwYj8eUz6Cs6M0EesSiL-hi7VZhWHo" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #1</button>
+              <div class="give-note">După submit se deschide direct linkul de download de pe Mega.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 2 – încrederea publicului -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #2</div>
+              <div class="give-chip">Încredere & brand</div>
+            </div>
+            <h3 class="give-title">1 ghid complet: cum construiești încrederea publicului tău</h3>
+            <p class="give-desc">
+              Ghid despre cum devii o prezență credibilă și respectată în online.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Principii de comunicare care construiesc încredere, nu doar hype.</span></li>
+              <li><span class="give-bullet">●</span><span>Ce să eviți ca să nu pierzi respectul și încrederea oamenilor.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/xovywegb">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #2 – Încrederea publicului"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow2" name="followed" required />
+                <label for="follow2">
+                  Confirm follow / subscribe la toate canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="2-ghid-incredere-public" />
+              <input type="hidden" name="_subject" value="Giveaway #2 – Ghid încrederea publicului" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/vtBRhQ7R#A-AW2Wg0Qy4I4O6jm6iM2I-7-XXfzbO68-vhyugEvjM" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #2</button>
+              <div class="give-note">Ghid în format PDF / document, gata de salvat.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 3 – de la vizualizări la conversie -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #3</div>
+              <div class="give-chip">Views → Bani</div>
+            </div>
+            <h3 class="give-title">1 ghid complet: de la vizualizări la conversie</h3>
+            <p class="give-desc">
+              Pași clari ca să transformi atenția în click-uri, lead-uri și vânzări.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Structură de funnel simplu pentru TikTok / Reels.</span></li>
+              <li><span class="give-bullet">●</span><span>Ce pui în bio, în descriere și în link ca să nu pierzi trafic.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/mgvrykeb">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #3 – Vizualizări → Conversie"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow3" name="followed" required />
+                <label for="follow3">
+                  Confirm follow / subscribe la canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="3-ghid-vizualizari-la-conversie" />
+              <input type="hidden" name="_subject" value="Giveaway #3 – Ghid de la vizualizări la conversie" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/mwgxxCaJ#DlzDQN2YME-JotGBalrPWYo1ahX75fUVU9Ev1myFa0E" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #3</button>
+              <div class="give-note">Perfect dacă vrei să ajungi la bani, nu doar la views.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 4 – 500+ video 4K -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #4</div>
+              <div class="give-chip">500+ video 4K</div>
+            </div>
+            <h3 class="give-title">Baza de date cu 500+ video 4K</h3>
+            <p class="give-desc">
+              Clipuri 4K pregătite pentru TikTok, Instagram Reels, YouTube Shorts și reclame.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Video cu text, antrenamente, generale, aesthetic, space reels.</span></li>
+              <li><span class="give-bullet">●</span><span>Organizate pe foldere, gata de folosit și editat.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/mrbrkqbz">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #4 – 500+ video 4K"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow4" name="followed" required />
+                <label for="follow4">
+                  Confirm follow / subscribe la canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="4-baza-500-video-4k" />
+              <input type="hidden" name="_subject" value="Giveaway #4 – Baza de 500+ video 4K" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/folder/vk5FVQAD#p4_IQp19IU79aEff3CjY2A" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #4</button>
+              <div class="give-note">După submit se deschide direct folderul Mega cu toate clipurile.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 5 – NLP TikTok -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #5</div>
+              <div class="give-chip">NLP TikTok</div>
+            </div>
+            <h3 class="give-title">1 ghid cu tehnici NLP pentru TikTok</h3>
+            <p class="give-desc">
+              Folosești principii de NLP și psihologie în hook-uri, mesaje și storytelling pe TikTok.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Structuri de mesaj care prind atenția în primele secunde.</span></li>
+              <li><span class="give-bullet">●</span><span>Exemple concrete de fraze și pattern-uri aplicabile imediat.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/mnnlvdnn">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #5 – NLP TikTok"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow5" name="followed" required />
+                <label for="follow5">
+                  Confirm follow / subscribe la canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="5-ghid-nlp-tiktok" />
+              <input type="hidden" name="_subject" value="Giveaway #5 – Ghid tehnici NLP pentru TikTok" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/a4IGnD7B#GQ3IA3BfYS4tnzBW0kayWjEwQvH3zWNTFrdeEKOyIrA" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #5</button>
+              <div class="give-note">Ideal dacă vrei content cu impact psihologic mai mare.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 6 – promovare TikTok -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #6</div>
+              <div class="give-chip">TikTok complet</div>
+            </div>
+            <h3 class="give-title">1 ghid complet: tot despre promovarea pe TikTok</h3>
+            <p class="give-desc">
+              Cum funcționează TikTok, ce postezi, cât de des și cum pornești reclame simple.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Algoritm explicat pe înțelesul tuturor.</span></li>
+              <li><span class="give-bullet">●</span><span>Strategii de postare organică și introducere în TikTok Ads.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/xjkjrwkg">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #6 – Promovare TikTok"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow6" name="followed" required />
+                <label for="follow6">
+                  Confirm follow / subscribe la canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="6-ghid-promovare-tiktok" />
+              <input type="hidden" name="_subject" value="Giveaway #6 – Ghid promovare TikTok" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/21wRXZDT#dJneV-OedR0nWCLTv5gJvNJKmDsRecHHJeHNYkcNBHI" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #6</button>
+              <div class="give-note">Dacă TikTok e platforma ta principală, ăsta e must-have.</div>
+            </form>
+          </article>
+
+          <!-- GIVEAWAY 7 – secrete Instagram -->
+          <article class="give-card">
+            <div class="give-header-row">
+              <div class="give-tag">Giveaway #7</div>
+              <div class="give-chip">Secrete Instagram</div>
+            </div>
+            <h3 class="give-title">1 ghid complet: toate secretele Instagramului</h3>
+            <p class="give-desc">
+              Cum arată un profil profesionist și cum folosești Reels, Stories, carusele pentru reach.
+            </p>
+            <ul class="give-bullets">
+              <li><span class="give-bullet">●</span><span>Profil care arată „business premium”, nu amator.</span></li>
+              <li><span class="give-bullet">●</span><span>Trucuri pentru reach mai mare fără să arzi bani în ads.</span></li>
+            </ul>
+
+            <form class="give-form" method="post" action="https://formspree.io/f/mdkyzgke">
+              <input
+                type="email"
+                class="input-mini"
+                name="email"
+                placeholder="Email pentru Giveaway #7 – Secrete Instagram"
+                required
+              />
+              <div class="checkbox-row">
+                <input type="checkbox" id="follow7" name="followed" required />
+                <label for="follow7">
+                  Confirm follow / subscribe la canalele sociale.
+                </label>
+              </div>
+              <input type="hidden" name="giveaway_id" value="7-ghid-secrete-instagram" />
+              <input type="hidden" name="_subject" value="Giveaway #7 – Secretele Instagramului" />
+              <input type="hidden" name="_redirect" value="https://mega.nz/file/6h4VhI5D#sKXajdReSoyrx9XGTZqrxWMnWE4IppYiywwYhlQMzL4" />
+              <button type="submit" class="btn-mini">Deblochează Giveaway #7</button>
+              <div class="give-note">Ghidul care te ajută să arăți ca un brand, nu ca un cont random.</div>
+            </form>
+          </article>
+
+        </div>
+
+        <div style="margin-top:1.1rem;" class="mini-card">
+          <b>Poți să iei tot pachetul sau doar ce ai nevoie acum.</b><br />
+          Fiecare formular deblochează un pachet diferit: pentru toate 7, repeți procesul o dată per pachet.
+          Emailurile rămân la tine pentru follow-up, iar oamenii te ajută să crești comunitatea prin follow / subscribe.
+        </div>
+      </div>
+    </section>
+
+    <!-- MONEY SECTION -->
+    <section class="section" id="money">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">De la content la bani</div>
+          <h2 class="section-title">Cum folosești pachetul ca să ajungi la bani, nu doar la views</h2>
+          <p class="section-sub">
+            Nu e magie. E muncă + consecvență + unelte bune. Tu vii cu munca și consecvența, eu îți dau uneltele.
+          </p>
+        </div>
+
+        <div class="grid-what">
+          <div class="card-outline">
+            <h3>Scenariul 1 – Crești brandul tău și vinzi ce ai</h3>
+            <ul class="list">
+              <li><span class="bullet">●</span><span>Alegi video-urile 4K potrivite pentru mesajul tău.</span></li>
+              <li><span class="bullet">●</span><span>Folosești ghidul cu 100 idei Reels + NLP pentru text și hook.</span></li>
+              <li><span class="bullet">●</span><span>Aplici ghidul „De la vizualizări la conversie” ca să trimiți traficul spre oferta ta.</span></li>
+            </ul>
+          </div>
+          <div class="card-outline">
+            <h3>Scenariul 2 – Faci content pentru alții (freelancing)</h3>
+            <ul class="list">
+              <li><span class="bullet">●</span><span>Folosești baza video + ghidurile ca motor de producție pentru clinici, saloane, antrenori, afaceri mici.</span></li>
+              <li><span class="bullet">●</span><span>Vinzi pachete de content (10–30 video / lună) pe Facebook, TikTok, Insta sau Fiverr.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR WHO -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Pentru cine este / nu este</div>
+          <h2 class="section-title">Cine o să scoată maximum din pachetul ăsta</h2>
+        </div>
+
+        <div class="grid-forwho">
+          <div class="for-card">
+            <h3>Este pentru tine dacă:</h3>
+            <ul class="for-list">
+              <li><span class="for-icon">✅</span><span>Vrei să crești serios pe TikTok, Instagram, YouTube Shorts sau Facebook Reels.</span></li>
+              <li><span class="for-icon">✅</span><span>Vrei să ai content constant fără să filmezi totul singur.</span></li>
+              <li><span class="for-icon">✅</span><span>Ești dispus să postezi constant și să testezi.</span></li>
+              <li><span class="for-icon">✅</span><span>Vrei să transformi contentul în bani, colaborări și clienți reali.</span></li>
+            </ul>
+          </div>
+
+          <div class="for-card">
+            <h3>Nu este pentru tine dacă:</h3>
+            <ul class="for-list">
+              <li><span class="for-icon">⛔</span><span>Cauți „bani fără muncă” sau „îmbogățire peste noapte”.</span></li>
+              <li><span class="for-icon">⛔</span><span>Nu vrei să postezi, doar să colecționezi resurse.</span></li>
+              <li><span class="for-icon">⛔</span><span>Te deranjează ideea să dai follow / subscribe în schimbul unui pachet de valoare reală.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BIG -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-block">
+          <div class="cta-title">Ai 7 pachete gratuite pregătite să lucreze pentru tine</div>
+          <div class="cta-text">
+            Îți ia câteva zeci de secunde să deblochezi fiecare pachet în parte.  
+            <b>Diferența o face cât de serios le folosești după aceea.</b>
+          </div>
+          <a href="#giveaways" class="btn-primary" style="justify-content:center;">
+            Alege pachetul pe care vrei să-l deblochezi acum
+          </a>
+          <div class="cta-subnote">
+            Poți să revii oricând pe pagină și să deblochezi și restul pachetelor. Emailurile și follow-urile rămân la tine ca asset de business.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Întrebări frecvente</div>
+          <h2 class="section-title">Clarificări rapide</h2>
+        </div>
+
+        <div class="grid-faq">
+          <div>
+            <div class="faq-item">
+              <div class="faq-q">E chiar totul gratuit?</div>
+              <div>
+                Da. Fiecare pachet se deblochează cu email + follow / subscribe la canalele noastre.
+                Nu îți cer cardul, nu există abonament ascuns.
+              </div>
+            </div>
+            <div class="faq-item" style="margin-top:0.6rem;">
+              <div class="faq-q">Pot folosi video-urile și pentru clienți?</div>
+              <div>
+                Da, le poți folosi în content pentru clienți (postări, Reels, TikTok, Shorts),
+                atât timp cât nu revinzi pachetul ca produs separat „ca atare”.
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="faq-item">
+              <div class="faq-q">În cât timp pot să văd rezultate?</div>
+              <div>
+                Depinde cât de serios intri în joc. Dacă postezi zilnic și aplici ghidurile,
+                poți vedea diferență în câteva săptămâni: reach, DM-uri, colaborări, primele încasări.
+              </div>
+            </div>
+            <div class="faq-item" style="margin-top:0.6rem;">
+              <div class="faq-q">Dacă mă răzgândesc?</div>
+              <div>
+                Te poți dezabona oricând din email, poți da unfollow când vrei.  
+                Pachetele descărcate rămân la tine. Eu vreau să rămâi în comunitate pentru că îți place ce primești, nu pentru că te ține ceva forțat.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2025 – Pachet Gratuit: 500+ Video 4K & 6 Ghiduri pentru Content & Conversii.</div>
+      <div class="footer-links">
+        <a href="#top">Înapoi sus</a>
+        <a>Termeni & condiții</a>
+        <a>Politică de confidențialitate</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>
